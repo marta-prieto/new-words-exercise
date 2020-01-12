@@ -1,27 +1,17 @@
-function words(casasa, casaca) {
+const arrayWords = [
+    'sacasa',
+    'casaca',
+];
+arrayWords.forEach(myFunction);
 
-  const newWord = casasa;
-  const isWord = newWord === casasa; //true
-  const secondWord = newWord === casaca; //false
-  if (isWord === newWord) {
-    return true;
-  } else (secondWord !== newWord)
-  return false;
+function myFunction(item, index) {
+    document.getElementById('word').innerHTML += index + item;    
+    const getWords = arrayWords.map(word => word.includes(index[0,1,2,3,4,5]))
+    console.log(arrayWords);
+    if ((getWords.indexOf[0]) !== 's') {
+        console.log('false');
+    }else if (getWords.remove(index[0])) {
+        console.log('')
+    }else (getWords === '')
+       console.log('false')
 }
-
-function getWords(casasa, casaca) {
-  const newWord = casasa;
-
-  if (newWord === casasa) {
-    return true;
-  } else if (newWord !== casasa) {
-    return false;
-  } else (newWord === casaca)
-  return false;
-}
- 
-
-const words = ['casasa', 'casaca'];
-const checkNewWord = words.map( name => name.includes('casasa') );
-
-console.log(checkNewWord);
